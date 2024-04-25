@@ -12,9 +12,14 @@ mat-card {
 
 .preview-card {
     max-width: 400px;
-  }
-  
-.header-image {
-background-image: url("../../assets/icon-cocktailapp.png");
-background-size: cover;
+}
+
+.header-image-unity {
+    background-image: url("../../assets/software/icon-unity.png");
+    background-size: cover;
+}
+
+.header-image-ue {
+    background-image: url("../../assets/software/unrealengine.png");
+    background-size: cover;
 }

@@ -55,40 +55,21 @@
                 <div class="col">
                     <mat-card class="preview-card">
                         <mat-card-header>
-                            <div mat-card-avatar class="header-image mat-elevation-z8"></div>
+                            <div mat-card-avatar class="header-image-unity mat-elevation-z8"></div>
                             <mat-card-title style="font-weight: bold;">Unity Actor Painter</mat-card-title>
                             <mat-card-subtitle>Outil Editeur</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/placeholder.png" alt="Aperçu de l'outil"
+                        <img mat-card-image src="../../assets/projects/unitypainttool.gif" alt="Aperçu de l'outil"
                             style="max-height: 370px;">
                         <mat-card-content>
                             <p>
-                                Outils editeur sur Unity pour peindre des groupes d'objets dans une scène Unity.
-                            </p>
-                        </mat-card-content>
-
-                        <mat-card-actions>
-                            <button mat-button class="menu-button"
-                                (click)="redirect('https://github.com/W3llgun/UE5PaintTool')">
-                                <div>
-                                    <mat-icon><i class="fab fa-github-square"></i></mat-icon>
-                                </div>
-                            </button>
-                        </mat-card-actions>
-                    </mat-card>
-                </div>
-                <div class="col">
-                    <mat-card class="preview-card">
-                        <mat-card-header>
-                            <div mat-card-avatar class="header-image mat-elevation-z8"></div>
-                            <mat-card-title style="font-weight: bold;">UE5 Actor Painter</mat-card-title>
-                            <mat-card-subtitle>Outil Editeur</mat-card-subtitle>
-                        </mat-card-header>
-                        <img mat-card-image src="../../assets/placeholder.png" alt="Aperçu de l'outil"
-                            style="max-height: 370px;">
-                        <mat-card-content>
-                            <p>
-                                Outils editeur sur UE5 pour peindre des groupes d'acteurs dans un niveau.
+                                Permet d'ajouter des groupes d'objets dans une scène en un simple mouvement.<br>
+                                - Raccourcis clavier simple<br>
+                                - Rotation et position aléatoire<br>
+                                - Sélection aléatoire parmis un groupe<br>
+                                - Annuler avec ctrl-z<br>
+                                - Ajustement de la position et rotation avec la normale<br>
+                                - et plus<br>
                             </p>
                         </mat-card-content>
 
@@ -105,25 +86,55 @@
                 <div class="col">
                     <mat-card class="preview-card">
                         <mat-card-header>
-                            <div mat-card-avatar
-                                style="background-image: url('../../assets/icon-pepog.png'); background-size: cover;"
-                                class="mat-elevation-z8"></div>
-                            <mat-card-title style="font-weight: bold;">Mon profil</mat-card-title>
-                            <mat-card-subtitle>Si une image devait me représenter</mat-card-subtitle>
+                            <div mat-card-avatar class="header-image-ue mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">UE5 Actor Painter</mat-card-title>
+                            <mat-card-subtitle>Outil Editeur</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/code-works.jpg" alt="Aperçu de l'application mobile"
+                        <img mat-card-image src="../../assets/placeholder.png" alt="Aperçu de l'outil"
                             style="max-height: 370px;">
                         <mat-card-content>
                             <p>
+                                Permet d'ajouter des groupes d'acteurs dans un niveau en un simple mouvement.<br>
+                                - Raccourcis clavier simple<br>
+                                - Rotation et position aléatoire<br>
+                                - Sélection aléatoire parmis un groupe<br>
+                                - Annuler avec ctrl-z<br>
+                                - Ajustement de la position et rotation avec la normale<br>
+                                - et plus<br>
                             </p>
                         </mat-card-content>
+
                         <mat-card-actions>
-                            <button mat-button class="menu-button" [disabled]="true">
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://github.com/W3llgun/UE5PaintTool')">
                                 <div>
-                                    <mat-icon><i class="fas fa-user-circle"></i></mat-icon>
+                                    <mat-icon><i class="fab fa-github-square"></i></mat-icon>
                                 </div>
                             </button>
                         </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image-unity mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">Unity Localisation</mat-card-title>
+                            <mat-card-subtitle>Outil Editeur</mat-card-subtitle>
+                        </mat-card-header>
+                        <!-- <img mat-card-image src="../../assets/placeholder.png" alt="Aperçu de l'outil"
+                            style="max-height: 370px;"> -->
+                        <mat-card-content>
+                            <p>
+                                Outil privé pour Immersive Factory<br>
+                                - Intégré a Unity Editor/Runtime<br>
+                                - Un seul language dans la mémoire<br>
+                                - Supporte l'écriture de droite à gauche<br>
+                                - Import/Export CSV ou TSV<br>
+                                - Changement de langue instantané et à tout moment<br>
+                                - Support multi-données: Text, Audio, Image, Object<br>
+                                - Optimisé pour le runtime<br>
+                            </p>
+                        </mat-card-content>
                     </mat-card>
                 </div>
 
@@ -132,31 +143,106 @@
                 <div class="col">
                     <mat-card class="preview-card">
                         <mat-card-header>
-                            <div mat-card-avatar
-                                style="background-image: url('../../assets/checkserv-logo.png'); background-size: cover;"
-                                class="mat-elevation-z8"></div>
-                            <mat-card-title style="font-weight: bold;">CheckServ</mat-card-title>
-                            <mat-card-subtitle>Un logiciel pour surveiller son serveur.</mat-card-subtitle>
+                            <div mat-card-avatar class="header-image-unity mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">WPLogger</mat-card-title>
+                            <mat-card-subtitle>Logger personel pour Unity</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/checkserv-img.png"
-                            alt="Aperçu de la documentation que j'ai rédigé" style="max-height: 370px;">
+                        <!-- <img mat-card-image src="../../assets/placeholder.png" alt="Un logger que j'ai développer pour"
+                            style="max-height: 370px;"> -->
                         <mat-card-content>
                             <p>
-                                Qu'est ce que CheckServ ? CheckServ est un service permettant de surveiller le bon
-                                fonctionnement d'un ou plusieurs
-                                serveurs. Si l'un des serveurs n'est plus joignable, le logiciel enverra automatiquement
-                                un mail aux utilisateurs avec
-                                la date/heure et le serveur concerné.
-                                CheckServ permet aussi de surveiller des services rattachés à un serveur. Si l'un des
-                                services n'est plus joignable par
-                                l'extérieur, alors le logiciel enverra un mail.
+                                Un logger que j'ai développer pour mon usage personel qui comprend de nouvelles
+                                fonctionnalitées
+                                pas présente avec un simple Debug.Log.
+                                Contient surtout une optimisation pour retirer complètement les appels des logs si ils
+                                sont désactivé au runtime.
+                                <br>
+                                D'autres loggers existant doivent être meilleurs mais je me suis bien amusé à faire
+                                le mien.
                             </p>
                         </mat-card-content>
                         <mat-card-actions>
                             <button mat-button class="menu-button"
-                                (click)="redirect('https://github.com/gpatruno/Checkserv')">
+                                (click)="redirect('https://github.com/W3llgun/WUnityLogger')">
                                 <div>
                                     <mat-icon><i class="fab fa-github-square"></i></mat-icon>
+                                </div>
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image-ue mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">Dual Souls</mat-card-title>
+                            <mat-card-subtitle>Projet GlobalGameJam sur UE4</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../assets/placeholder.png" alt="Un logger que j'ai développer pour"
+                            style="max-height: 370px;">
+                        <mat-card-content>
+                            <p>
+                                Le personnage alterne entre l'ombre et la lumière pour résoudre des puzzles.
+                                <br>
+                                Projet fait sur UE4 à l'occasion de la GlobalGameJam 2020 en duo.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://brizoft.itch.io/dual-souls')">
+                                <div>
+                                    <mat-icon><i class="fa-brands fa-itch-io">itch io</i></mat-icon>
+                                </div>
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image-unity mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">Metotem</mat-card-title>
+                            <mat-card-subtitle>Projet GlobalGameJam sur Unity</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../assets/placeholder.png" alt="Un logger que j'ai développer pour"
+                            style="max-height: 370px;">
+                        <mat-card-content>
+                            <p>
+                                Jeux de mémoire.
+                                <br>
+                                Projet fait sur unity à l'occasion de la GlobalGameJam 2018 avec l'équipe d'Immersive
+                                Factory.
+                            </p>
+                        </mat-card-content>
+
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image-unity mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">You The Shepherd</mat-card-title>
+                            <mat-card-subtitle>Projet GlobalGameJam sur Unity</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../assets/placeholder.png" alt="Un logger que j'ai développer pour"
+                            style="max-height: 370px;">
+                        <mat-card-content>
+                            <p>
+                                Jeux jouable uniquement sur Twitch en interagissant avec des commandes dans le chat.
+                                Se présente sous la forme d'un mini god game ou les joueurs peuvent terraformer le
+                                terrain pour influer sur les animaux présent dans le monde.
+                                <br>
+                                Projet fait sur unity à l'occasion de la GlobalGameJam 2016 avec une équipe de Rubika.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://v3.globalgamejam.org/2016/games/you-shepherd')">
+                                <div>
+                                    <mat-icon><i class="fa-solid fa-globe"></i></mat-icon>
                                 </div>
                             </button>
                         </mat-card-actions>
@@ -195,7 +281,7 @@
                         <div class="row">
                             <div class="col">
                                 <span>
-                                    Musculation, Fitness, Voile.
+                                    Fitness, Musculation, Voile.
                                 </span>
                             </div>
                         </div>
@@ -212,9 +298,7 @@
                         <div class="row">
                             <div class="col">
                                 <span>
-                                    League of Legends / Age Of Empires / Guild Wars 2 / Minecraft
-                                    /
-                                    Valorant / Apex / Tarkov
+                                    Un peu de tout, des petits au grands !
                                 </span>
                             </div>
                         </div>
