@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import '~@angular/material/core/theming/theming';
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
@@ -27,13 +26,10 @@ $portfolio-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$portfolio-theme: mat-light-theme((
-  color: (
-    primary: $portfolio-primary,
-    accent: $portfolio-accent,
-    warn: $portfolio-warn,
-  )
-));
+$portfolio-theme: mat-light-theme((color: (primary: $portfolio-primary,
+        accent: $portfolio-accent,
+        warn: $portfolio-warn,
+      )));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -41,13 +37,10 @@ $portfolio-theme: mat-light-theme((
 @include angular-material-theme($portfolio-theme);
 @include custom-components-theme($theming-material-components-theme); // ? changed
 
-$portfolio-dark-theme: mat-light-theme ((
-    color: (
-        primary: $portfolio-primary,
+$portfolio-dark-theme: mat-light-theme ((color: (primary: $portfolio-primary,
         accent: $portfolio-accent,
         warn: $portfolio-warn,
-    )
-));
+      )));
 
 .formation {
   padding: 10px;
@@ -63,31 +56,39 @@ $portfolio-dark-theme: mat-light-theme ((
 }
 
 .dark-theme {
-    @include angular-material-color($dark-theme);
-    .formation {
-      padding: 10px;
-      background-color: rgb(83, 83, 83);
-      border-radius: 5px;
-    }
+  @include angular-material-color($dark-theme);
 
-    
+  .formation {
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+  }
+
+
   .date {
     font-weight: bold;
     font-size: x-large;
     color: rgb(0, 110, 255);
   }
 }
-  
-  // Override typography for all Angular Material, including mat-base-typography and all components.
-  @include angular-material-typography($typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($typography);
 
 /* You can add global styles to this file, and also import other style files */
 
 
- html, body { height: 100%; }
- body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
 
- .title-section {
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.title-section {
   text-align: left;
   margin: 16px;
   font-size: 2rem;
