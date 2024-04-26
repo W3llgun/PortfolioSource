@@ -31,10 +31,22 @@ mat-sidenav {
     align-items: center;
     justify-content: flex-start;
     font-size: 1rem;
+    object-fit: scale-down;
 
     mat-icon {
         margin-right: 8px;
+        width: 35px;
     }
+
+    span {
+        vertical-align: middle;
+    }
+
+}
+
+mat-icon {
+    height: fit-content;
+    vertical-align: middle;
 }
 
 mat-sidenav-container {
@@ -77,9 +89,9 @@ mat-divider {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.mailto{
+.mailto {
     color: white;
-  }
+}
 
 .spacer {
     flex: 1 1 auto;
